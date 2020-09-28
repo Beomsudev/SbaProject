@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/bumsu/SbaProject/price_predction/data/saved_model.ckpt"
+all_model_checkpoint_paths: "/Users/bumsu/SbaProject/price_predction/data/saved_model.ckpt"

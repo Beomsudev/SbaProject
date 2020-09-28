@@ -1,6 +1,9 @@
+import sys
+sys.path.insert(0, '/Users/bumsu/SbaProject')
+11
 import nltk
-from textmining.entity import Entity
-from textmining.samsung_service import SamsungService
+from miner.entity import Entity
+from miner.samsung_service import SamsungService
 class Controller:
     def __init__(self):
         pass
@@ -10,7 +13,7 @@ class Controller:
         entity = Entity()
         service = SamsungService()
         entity.fname = 'kr-Report_2018.txt'
-        entity.context = './data/'
+        entity.context = 'c:/Users/bumsu/SbaProject/miner/data/'
         service.extract_token(entity)
         service.extract_hanguel()
         service.conversion_token()
